@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628506469492",
+    "project_id": "feed-finder-d909a",
+    "storage_bucket": "feed-finder-d909a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628506469492:android:e1d380c4ae8caf2d895d21",
+        "android_client_info": {
+          "package_name": "com.mobile.feedfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBahmnVm_0PloRFRq2pD-CaeM2ferGydTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
