@@ -1,7 +1,6 @@
 package com.mobile.feedfinder.authentication
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.fragment.app.Fragment
@@ -12,10 +11,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.mobile.feedfinder.databinding.FragmentSignUpBinding
 import com.mobile.feedfinder.model.User
-import com.mobile.feedfinder.util.goActivityWithFlags
-import com.mobile.feedfinder.view.MainActivity
 import com.mobile.feedfinder.viewmodel.UserViewModel
-import dagger.hilt.android.AndroidEntryPoint
 
 class SignUpFragment : Fragment() {
 

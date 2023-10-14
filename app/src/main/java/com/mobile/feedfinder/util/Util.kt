@@ -1,6 +1,7 @@
 package com.mobile.feedfinder.util
 
 import android.app.Activity
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.widget.ImageView
@@ -16,7 +17,7 @@ fun ImageView.downloadFromUrl(url : String?){
         .into(this)
 }
 
-fun Context.goActivityWithFlags(context: Context,targetActivity: Class<out Activity>){
+fun goActivityWithFlags(context: Context, targetActivity: Class<out Activity>){
     val intent = Intent(context,targetActivity)
     val activity = context as Activity
     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)

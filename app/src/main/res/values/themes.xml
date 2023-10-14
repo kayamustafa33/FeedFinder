@@ -3,7 +3,13 @@
     <style name="Base.Theme.FeedFinder" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/dark</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
     <style name="Theme.FeedFinder" parent="Base.Theme.FeedFinder" />
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!-- Renk burada belirleniyor -->
+        <item name="color">@color/white</item>
+    </style>
 </resources>

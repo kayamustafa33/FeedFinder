@@ -11,7 +11,7 @@ class FindAnimalsFragment : Fragment() {
 
     private lateinit var binding: FragmentFindAnimalsBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentFindAnimalsBinding.inflate(layoutInflater)
 
 

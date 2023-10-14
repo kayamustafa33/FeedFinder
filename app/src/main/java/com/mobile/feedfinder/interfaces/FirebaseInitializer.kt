@@ -5,4 +5,5 @@ interface FirebaseInitializer {
     fun initAuthAndUser()
     fun createDatabase(dbName : String)
     fun createStorage()
+    fun isLogin() : Boolean
 }

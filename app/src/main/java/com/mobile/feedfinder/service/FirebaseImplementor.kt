@@ -33,5 +33,10 @@ class FirebaseImplementor : FirebaseInitializer{
         firebaseStorage = FirebaseStorage.getInstance()
     }
 
+    override fun isLogin(): Boolean {
+        initAuthAndUser()
+        return firebaseAuth?.currentUser != null
+    }
+
 
 }

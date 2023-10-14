@@ -12,4 +12,7 @@
     <string name="e_mail_address">E-mail address</string>
     <string name="create_account">Create Account</string>
 
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
 </resources>
