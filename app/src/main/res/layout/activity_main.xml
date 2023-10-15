@@ -62,6 +62,8 @@
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        app:headerLayout="@layout/main_header_layout"
         android:layout_gravity="start"
         app:menu="@menu/drawer_items"/>
 
