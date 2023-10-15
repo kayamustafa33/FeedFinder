@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.widget.ImageView
+import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.mobile.feedfinder.R
 
@@ -23,4 +24,8 @@ fun goActivityWithFlags(context: Context, targetActivity: Class<out Activity>){
     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
     context.startActivity(intent)
     activity.finish()
+}
+
+fun showToast(context: Context,message : String){
+    Toast.makeText(context,message,Toast.LENGTH_SHORT).show()
 }

@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".authentication.SignInFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/cats_and_dog"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:text="Welcome"
+        android:textStyle="italic"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:text="Sign In Page" />
+        android:layout_margin="20dp"
+        android:textColor="@color/dark"/>
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/e_mail_address"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/dark"
+        android:drawableStart="@drawable/baseline_email"
+        android:drawablePadding="7dp"
+        android:paddingStart="12dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/dark"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_lock"
+        android:drawablePadding="7dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/edittext_bg"
+        android:inputType="textPassword"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/bottom_shape"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>

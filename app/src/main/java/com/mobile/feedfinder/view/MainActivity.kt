@@ -3,6 +3,7 @@ package com.mobile.feedfinder.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -14,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.mobile.feedfinder.R
 import com.mobile.feedfinder.databinding.ActivityMainBinding
+import com.mobile.feedfinder.service.FirebaseImplementor
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,6 +53,21 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setupWithNavController(navController)
 
         setupActionBarWithNavController(navController, appBarConfiguration)
+
+        binding.navigationView.setNavigationItemSelectedListener {
+            when (it.itemId){
+                R.id.logOutItem -> {
+                    binding.mainDrawerLayout.closeDrawers()
+                    FirebaseImplementor().logOut(binding.root.context)
+                    true
+                }
+                else -> {
+                    binding.mainDrawerLayout.closeDrawers()
+                    it.onNavDestinationSelected(navController) ||
+                            super.onOptionsItemSelected(it)
+                }
+            }
+        }
 
     }
 
